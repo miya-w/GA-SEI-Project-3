@@ -1,0 +1,91 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div>
+<section id="section1" data-nav="Section 1" class="your-active-class">
+     
+    <div class="section1-left-col">
+        <div class="section1-text">
+            <h2>
+                Welcome to Your Ideal Uni life
+               </h2>
+             <p>
+                Are you ready to embark on an unforgettable journey through your college years? At UniMate, we're here to make sure your student experience is nothing short of amazing.
+             </p>
+             
+              <a href="{% url 'about'%}">
+                <button class="common-btn" id="">
+                  Find Out More 
+                </button> 
+              </a>
+           </div>
+     
+    </div>
+      <div class="section1-right-col">
+        <img class="" src="{% static 'images/section1-illustration.png' %}" alt="Logo">
+        
+      </div>
+    
+  </section>
+
+  <section id="section2" data-nav="Section 2">
+    <h2 id="section2-h2">What We Offer in UniMate?</h2>
+      <div class="section2-container">
+      
+        <div class="section2-col">
+            <div class="circle">
+          <img src="{% static 'images/fi-br-world.png' %}" alt="">
+            </div>
+            <h4>
+                Exploration
+            </h4>
+            <p>
+                College is a time for growth, learning, and exploring. We're here to support your journey every step of the way.
+            </p>
+        </div>
+        <div class="section2-col">
+            <div class="circle">
+            <img src="{% static 'images/fi-br-map-marker-plus.png' %}" alt="">
+            </div>  
+            <h4>
+                Community
+            </h4>
+              <p>
+                College life is not just about hitting the books; it's about forming unforgettable memories
+              </p>
+        </div>
+        <div class="section2-col">
+            <div class="circle">
+            <img src="{% static 'images/fi-br-bookmark.png' %}" alt="">
+            </div>
+            <h4>
+                Affordability
+            </h4>
+            <p>
+                We understand the financial challenges of student life. That's why we offer different range for the options
+            </p>
+        </div>
+          
+      </div>
+  </section>
+  <section id="section3" data-nav="Section 3">
+        <div class="section3-text">
+          <h1 id="section3-title"> WHAT OUR USERS ARE SAYING</h1>
+    
+            <h2>
+              "I love how Unimate caters to student needs. It's more than just a housing search platform; it's a community. I connected with fellow students and even found a roommate who shares my passion for art. Unimate is a game-changer!"
+
+            </h2>
+            <h3 id="section3-name">
+              Isabella S. (5/5 stars)
+            </h3>
+        </div>
+    
+   
+  </section>
+</div>
+ 
+   
+ {% endblock %}

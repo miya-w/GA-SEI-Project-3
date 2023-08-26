@@ -1,0 +1,27 @@
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --dark-blue: #0078aa;
+    --light-blue: #3ab4f2;
+    --light-light-blue: #d8edf7;
+    --color-yellow: #f2df3a;
+    --color-orange: #e8aa42;
+    --red-orange: #fb765a;
+    --dark-grey: #222831;
+  }
+
+.about-img img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.about-text h3{
+    color: var(--dark-blue);
+    font-weight: 300;
+}
+
+.about-text p{
+    color:var(--black);
+}
